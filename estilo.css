@@ -1,2 +1,191 @@
-/* Importa o arquivo CSS que importa a fonte Ravie */
 @import "fonts/ravie.css";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {
+	height: 100%;
+    width: 100%;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+header, #cardapio, footer {
+    position: absolute;
+    left: 154px;
+    width: 646px;
+}
+
+aside {
+    float: left;
+    width: 154px;
+    height: 100%;
+}
+
+h1 {
+    font-family: "Ravie", serif;
+    color: #e90c0c;
+    font-size: 36px;
+}
+
+h2:first-of-type {
+    font-family: "Trebuchet MS", serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h2:first-of-type strong {
+    font-weight: normal;
+    color: #d027aa;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+#wrapper {
+    position: relative;
+    width: 800px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4599b2;
+    background-image: linear-gradient(#f6f1b2, #4599b2);
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+header {
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 5px;
+    padding-left: 21px;
+    box-sizing: border-box;
+    clear: both;
+}
+
+#sub {
+    padding-left: 200px;
+}
+
+footer {
+    position: absolute;
+    box-sizing: border-box;
+    height: 116px;
+    bottom: 0;
+    padding-bottom: 25px;
+    padding-top: 46px;
+    padding-right: 15px;
+}
+
+#cards {
+    float: right;
+}
+
+#content {
+    min-height: 50%;
+}
+
+#cardapio {
+    line-height: 200%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #aac0ae;
+    box-sizing: border-box;
+    padding: 15px 15px 35px 15px;
+}
+
+ul {
+	list-style-type:none;
+}
+
+li {
+	display:block;
+	box-sizing:border-box;
+}
+
+li:nth-child(odd) {
+	clear:both;
+	float:left;
+}
+
+li:nth-child(even) {
+	float:right;
+}
+
+#categorias {
+	display:inline;
+}
+
+#categorias > li {
+	clear:both;
+	float:none;
+}
+
+#categorias > li:not(#firstitem) {
+	padding-top:30px;
+}
+
+#ticket {
+    position: fixed;
+    top: 295px;
+    left: -70px;
+    transition: left 0.35s ease-out;
+}
+
+#ticket:hover {
+    cursor: pointer;
+    left:-1px;
+}
+
+#siri {
+    position: absolute;
+    left: -10px;
+    top: 7px;
+}
+
+#sideTitleContainer {
+    position: absolute;
+    width: 154px;
+    top: 40%;
+}
+
+#sideTitle {
+    font-family: "Verdana", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-90deg);
+}
+
+#bolhas {
+    position: absolute;
+    right: 666px;
+    bottom: 125px;
+}
+
+#peixe {
+    position: absolute;
+    left: -44px;
+    bottom: 0;
+}

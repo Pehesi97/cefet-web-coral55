@@ -8,10 +8,11 @@ function instantiateBubble() {
     var newBubbleEl = bubbleEl.cloneNode();
     newBubbleEl.style.position = 'fixed';
     newBubbleEl.style.transition = 'all 5s linear';
-    newBubbleEl.style.bottom = '-50px';
+    var bot = -50 + (Math.random() / 20);
+    newBubbleEl.style.bottom = bot + "px";
     newBubbleEl.style.left = Math.random() * window.innerWidth + 'px';
     newBubbleEl.style.opacity = 1;
-	newBubbleEl.style.transform = 'scale(' + (Math.random() / 2 + 0.5) + ')';
+    newBubbleEl.style.transform = 'scale(' + (Math.random() / 2 + 0.5) + ')';
     newBubbleEl.style.zIndex = 10000;
 
     document.body.appendChild(newBubbleEl);
@@ -30,7 +31,7 @@ function instantiateBubble() {
     window.setTimeout(instantiateBubble, 7000 + Math.random()*5000)
 }
 
-
-
-
+instantiateBubble();
+instantiateBubble();
+instantiateBubble();
 instantiateBubble();
